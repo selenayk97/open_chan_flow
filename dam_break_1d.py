@@ -1,25 +1,3 @@
-"""
-1D Dam-Break Simulation — Saint-Venant (Shallow Water) Equations
-==================================================================
-
-Solves the 1D shallow water equations:
-
-    dh/dt + d(hu)/dx = 0
-    d(hu)/dt + d(hu^2 + 0.5*g*h^2)/dx = 0
-
-using a finite-volume method with an HLL approximate Riemann solver
-and explicit Euler time stepping (CFL-limited).
-
-Also computes the exact Stoker (1957) analytical solution for a
-dam-break over a wet bed, so the numerical result can be validated.
-
-Outputs:
-    dam_break_comparison.png  -> numerical vs analytical at one time
-    dam_break_snapshots.png   -> numerical profiles at several times
-    dam_break_animation.gif   -> animated depth/velocity evolution
-
-Author: generated with Claude
-"""
 
 import numpy as np
 import matplotlib.pyplot as plt
